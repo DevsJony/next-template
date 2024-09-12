@@ -49,26 +49,3 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
-  deploy:
-    if: false # Remove this line when you are ready to deploy your app
-
-    needs: publish
-    name: Deploy Image
-    runs-on: ubuntu-latest
-    concurrency:
-      group: ci-${{ github.ref }}
-      cancel-in-progress: true
-
-    steps:
-      - name: Execute SSH commands
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.HOST }}
-          port: 22
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          script: |
-            cd ${{ secrets.DOCKER_COMPOSE_DIR }}
-            docker compose pull
-            docker compose up -d

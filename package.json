@@ -2,7 +2,7 @@
   "name": "next-template",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.10.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,8 +12,8 @@
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.436.0",
-    "next": "14.2.10",
+    "lucide-react": "^0.441.0",
+    "next": "14.2.12",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.33.5",

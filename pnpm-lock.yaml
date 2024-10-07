@@ -46,7 +46,7 @@ importers:
         specifier: ^18
         version: 18.3.0
       postcss:
-        specifier: ^8
+        specifier: ^8.4.47
         version: 8.4.47
       prettier:
         specifier: ^3.3.3

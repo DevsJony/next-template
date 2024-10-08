@@ -3,7 +3,8 @@
   "extends": [
     "config:recommended",
     ":automergeMinor",
-    ":automergeBranch"
+    ":automergeBranch",
+    "docker:disable"
   ],
   "rangeStrategy": "bump"
 }

@@ -5,7 +5,7 @@
 			"type": "npm",
 			"script": "dev",
 			"problemMatcher": [],
-			"label": "Run Dev Server",
+			"label": "Start dev server",
 			"detail": "next dev"
 		}
 	]

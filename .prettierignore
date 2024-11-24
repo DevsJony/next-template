@@ -1,7 +1,7 @@
 # Ignore everything recursively
 *
 
-# Exclude the following files
+# Only format the following files
 !*.ts
 !*.tsx
 !*.css

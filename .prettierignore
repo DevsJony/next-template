@@ -1,1 +1,13 @@
-components/ui
+# Ignore everything recursively
+*
+
+# Exclude the following files
+!*.ts
+!*.tsx
+!*.css
+
+# Other
+components/ui/**/*
+
+# Check subdirectories too
+!*/

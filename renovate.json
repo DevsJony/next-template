@@ -4,7 +4,7 @@
     "config:recommended",
     "docker:disable",
     "group:allNonMajor",
-    "schedule:automergeWeekly"
+    "schedule:weekly"
   ],
   "rangeStrategy": "bump"
 }

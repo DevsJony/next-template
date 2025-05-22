@@ -3,8 +3,10 @@
   "extends": [
     "config:recommended",
     "docker:disable",
-    "group:allNonMajor",
-    "schedule:weekly"
+    "group:allNonMajor"
   ],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "schedule": [
+    "* * * * 1"
+  ]
 }

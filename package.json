@@ -2,7 +2,7 @@
   "name": "next-template",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -12,8 +12,8 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.511.0",
-    "next": "15.3.2",
+    "lucide-react": "^0.515.0",
+    "next": "15.3.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "sharp": "^0.34.2",
@@ -21,12 +21,12 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^22.15.23",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
-    "postcss": "^8.5.3",
+    "@types/node": "^22.15.32",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "postcss": "^8.5.5",
     "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
+    "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"
   }

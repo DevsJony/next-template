@@ -1,12 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "docker:disable",
-    "group:allNonMajor"
-  ],
-  "rangeStrategy": "bump",
-  "schedule": [
-    "* * * * 1"
-  ]
+  "extends": ["github>DevsJony/renovate-config/typescript"]
 }

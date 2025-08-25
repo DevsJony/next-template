@@ -12,7 +12,7 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.540.0",
+    "lucide-react": "^0.541.0",
     "next": "15.5.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -21,8 +21,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^22.17.2",
-    "@types/react": "^19.1.10",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",

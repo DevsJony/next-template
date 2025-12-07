@@ -5,10 +5,10 @@
   "packageManager": "pnpm@10.24.0",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build-standalone": "next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build": "opennextjs-cloudflare build",
+    "cf-build": "opennextjs-cloudflare build",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"

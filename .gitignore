@@ -40,3 +40,5 @@ next-env.d.ts
 .idea/*
 !.idea/prettier.xml
 .playwright-mcp/
+.open-next/
+.wrangler/

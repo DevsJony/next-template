@@ -1,6 +1,6 @@
 # Next.js Template
 
-A modern Next.js template with Tailwind CSS, shadcn/ui, Lucide icons, Framer Motion animations, and multiple deployment options.
+A standard template used by everyone at Fanth for building web apps. Built with Next.js, Tailwind CSS, shadcn/ui, Lucide icons, Framer Motion, and multiple deployment options.
 
 ## Tech Stack
 
@@ -112,4 +112,4 @@ pnpm deploy
 
 ### Docker
 
-The template includes a Dockerfile. On push to `master`, GitHub Actions automatically builds and pushes the image to GHCR.
+The included Dockerfile is automatically built and pushed to GHCR via GitHub Actions on push to `master`.

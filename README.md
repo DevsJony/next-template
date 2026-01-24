@@ -1,30 +1,115 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Template
+
+A modern Next.js template with Tailwind CSS, shadcn/ui, Lucide icons, Framer Motion animations, and multiple deployment options.
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) with Turbopack
+- **React:** v19
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Components:** [shadcn/ui](https://ui.shadcn.com/) (New York style)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animations:** [Framer Motion](https://motion.dev/)
+- **Package Manager:** pnpm
+- **Language:** TypeScript
+
+## Features
+
+- Server Components (RSC) ready
+- Cloudflare Pages deployment via [OpenNext](https://opennext.js.org/)
+- Docker support with GitHub Container Registry
+- GitHub Actions CI/CD
+- Prettier with Tailwind CSS plugin
+- [Renovate](https://docs.renovatebot.com/) for automated dependency updates
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+pnpm install
+
+# Run development server with Turbopack
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start dev server with Turbopack |
+| `pnpm build` | Build for production |
+| `pnpm start` | Start production server |
+| `pnpm lint` | Run ESLint |
+| `pnpm preview` | Build and preview Cloudflare deployment |
+| `pnpm deploy` | Deploy to Cloudflare Pages |
 
-## Learn More
+## Adding shadcn/ui Components
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm dlx shadcn@latest add button
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This template works great with [Lucide React](https://lucide.dev/) icons (recommended for shadcn/ui) or [Phosphor Icons](https://phosphoricons.com/).
 
-## Deploy on Vercel
+### Install Lucide React
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm add lucide-react
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Usage Example
+
+```tsx
+import { Search, Menu, X } from "lucide-react";
+
+export function Header() {
+  return (
+    <header>
+      <button><Menu className="h-5 w-5" /></button>
+      <button><Search className="h-5 w-5" /></button>
+    </header>
+  );
+}
+```
+
+## Animations
+
+For animations we use [Framer Motion](https://motion.dev/).
+
+```bash
+pnpm add framer-motion
+```
+
+### Usage Example
+
+```tsx
+import { motion } from "framer-motion";
+
+export function FadeInBox() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      Hello!
+    </motion.div>
+  );
+}
+```
+
+## Deployment
+
+### Cloudflare Pages
+
+```bash
+pnpm deploy
+```
+
+### Docker
+
+The template includes a Dockerfile. On push to `master`, GitHub Actions automatically builds and pushes the image to GHCR.

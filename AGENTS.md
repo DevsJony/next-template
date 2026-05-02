@@ -5,3 +5,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- END:nextjs-agent-rules -->
 
 - Always check types using `pnpm run type-check`.
+- Use shadcn skill for UI components.

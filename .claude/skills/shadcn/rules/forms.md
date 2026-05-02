@@ -190,3 +190,5 @@ Both attributes are needed — `data-invalid`/`data-disabled` styles the field (
 ```
 
 Works for all controls: `Input`, `Textarea`, `Select`, `Checkbox`, `RadioGroupItem`, `Switch`, `Slider`, `NativeSelect`, `InputOTP`.
+
+Check here for full documentation: https://ui.shadcn.com/docs/forms/react-hook-form

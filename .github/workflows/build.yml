@@ -1,12 +1,16 @@
 name: Build
 
 on:
+  push:
+    branches:
+      - master
   pull_request:
   workflow_call:
 
 jobs:
   build:
     name: Check types and build
+    if: github.event_name != 'push' || github.event.repository.is_template
 
     runs-on: ubuntu-latest
     steps:

@@ -6,3 +6,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 - Always check types using `pnpm run type-check`.
 - Always use shadcn skill for UI components and interacting with shadcn.
+- When using [Convex](https://www.convex.dev/) for authentication always use [Convex Auth](https://labs.convex.dev/auth)

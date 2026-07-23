@@ -5,6 +5,7 @@
 - When you want email sending:
   - Plain Next.js on cloudflare workers: Use `send_email` binding (https://developers.cloudflare.com/email-service/configuration/send-bindings/)
   - With Convex: Send emails through Cloudflare Email Service through API using their library [cloudflare](https://www.npmjs.com/package/cloudflare) ([docs](https://github.com/cloudflare/cloudflare-typescript/blob/main/src/resources/email-sending/api.md)).
+- When you are setting up [Convex](https://www.convex.dev/) then always run `npx convex ai-files install` to install skills and other AI files so you could better understand Convex.
 
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know

@@ -15,6 +15,9 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     "cloudflare-env.d.ts",
     "components/ui/**",
+    ".claude/**",
+    ".agents/**",
+    ".github/skills/**",
   ]),
 ]);
 

@@ -8,6 +8,7 @@
   - With Convex: Send emails through Cloudflare Email Service through API using their library [cloudflare](https://www.npmjs.com/package/cloudflare) ([docs](https://github.com/cloudflare/cloudflare-typescript/blob/main/src/resources/email-sending/api.md)).
 - When you are setting up [Convex](https://www.convex.dev/) then always run `npx convex ai-files install` to install skills and other AI files so you could better understand Convex.
 - When you want to use Cloudflare D1 then always use Drizzle ORM for working with SQL.
+- When you want to get or save state to search params then always use the [`nuqs`](https://www.npmjs.com/package/nuqs) lib.
 
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know

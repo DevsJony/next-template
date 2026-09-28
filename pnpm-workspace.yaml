@@ -4,3 +4,5 @@ allowBuilds:
   sharp: false
   unrs-resolver: false
   workerd: true
+minimumReleaseAgeExclude:
+  - wrangler@4.143.0

@@ -8,6 +8,8 @@
   - With Convex: Send emails through Cloudflare Email Service through API using their library [cloudflare](https://www.npmjs.com/package/cloudflare) ([docs](https://github.com/cloudflare/cloudflare-typescript/blob/main/src/resources/email-sending/api.md)).
 - When you want to use Cloudflare D1 then always use Drizzle ORM for working with SQL.
 - When you want to get or save state to search params then always use the [`nuqs`](https://www.npmjs.com/package/nuqs) lib.
+- Keep `middleware.ts` - do not rename it to `proxy.ts` even though Next.js 16 deprecated it. `proxy.ts` is not supported on Cloudflare Workers.
+- To interact with Convex use CLI.
 
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know

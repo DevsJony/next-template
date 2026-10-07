@@ -2,7 +2,7 @@
 - Always use shadcn skill for UI components and interacting with shadcn.
 - Do not use long dashes (em dashes or en dashes like "—" or "–"). Always use a regular hyphen "-" instead. Also, do not use typographic or curly quotation marks such as „ ” or “ ”. Always use standard straight double quotes " for all quotations.
 - Never make try catches without logging the error, and never ignore errors silently. Always log the error with context.
-- When using [Convex](https://www.convex.dev/) for authentication always use Better Auth https://www.convex.dev/components/better-auth https://labs.convex.dev/better-auth
+- When using [Convex](https://www.convex.dev/) for authentication always use Better Auth https://better-auth.com/docs/integrations/convex
 - When you want email sending:
   - Plain Next.js on cloudflare workers: Use `send_email` binding (https://developers.cloudflare.com/email-service/configuration/send-bindings/)
   - With Convex: Send emails through Cloudflare Email Service through API using their library [cloudflare](https://www.npmjs.com/package/cloudflare) ([docs](https://github.com/cloudflare/cloudflare-typescript/blob/main/src/resources/email-sending/api.md)).

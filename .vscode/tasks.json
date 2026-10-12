@@ -7,6 +7,13 @@
 			"problemMatcher": [],
 			"label": "Start dev server",
 			"detail": "next dev"
+		},
+		{
+			"type": "npm",
+			"script": "start:convex",
+			"problemMatcher": [],
+			"label": "Start convex backend",
+			"detail": "convex dev"
 		}
 	]
 }

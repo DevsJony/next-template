@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{const p=JSON.parse(d).tool_input.file_path;require('child_process').spawnSync('npx',['prettier','--write',p],{stdio:'inherit',shell:true})})\""
+            "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{const p=JSON.parse(d).tool_input.file_path;require('child_process').spawnSync(process.execPath,[require.resolve('prettier/bin/prettier.cjs'),'--write','--ignore-unknown',p],{stdio:'inherit'})})\""
           }
         ]
       }
